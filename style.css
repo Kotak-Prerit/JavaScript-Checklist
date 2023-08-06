@@ -28,7 +28,7 @@
 }
 
 .heading {
-  padding-block: 10px;
+  padding-top: 10px;
   text-align: center;
   color: #000;
   font-weight: 500;
@@ -66,6 +66,7 @@ summary {
   border-radius: 10px;
   position: relative;
   cursor: pointer;
+  border: 1px solid #000;
 }
 
 details {
@@ -74,22 +75,70 @@ details {
   margin-bottom: 10px;
 }
 
+.subTopics>p {
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 10;
+  padding: 3px;
+  align-self: center;
+}
+
+.subTopics>p::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 20px;
+  background: #DFDFDF;
+  z-index: -2;
+  transition: all 0.7s ease-out;
+}
+
+.dec-var[open] {
+  border: none;
+}
+
+.dec-var>p {
+  margin: 5px 0 5px 15%;
+}
+
+details[open]>summary {
+  border: none;
+  background: #fff;
+}
+
+details[open] {
+  border: 1px solid #000;
+}
+
+details[open]>.subTopics>p::before {
+  width: 100%;
+  transition: 1s ease-out;
+}
+
 summary>a {
   font-size: 20px;
   font-weight: 600;
 }
 
+.intro,
 .var,
 .dt {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .cdt,
+.dv,
 .primitives {
   width: auto;
   margin: 0 0 5px 15%;
   padding: 0;
+  background: #fff;
+  border: none;
+}
+
+.dv {
+  margin-left: 0;
 }
 
 .cdt,
@@ -116,11 +165,11 @@ summary>a {
 }
 
 .fa-circle-check {
-  margin-right: 8px;
-  color: #b4ffb4;
-  border: 1px solid green;
-  background: #000;
+  margin-inline: 6px;
+  color: #aaffae;
   border-radius: 50%;
+  background: #000;
+  box-shadow: 0 0 0 1.5px green;
 }
 
 .fa-arrow-up-right-from-square {
@@ -128,10 +177,6 @@ summary>a {
   right: 3%;
   font-size: 20px;
   top: 25%;
-}
-
-.outdated {
-  color: red;
 }
 
 .primitives p {

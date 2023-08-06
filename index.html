@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="JS.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>JavaScript</title>
-  </head>
 
-  <body>
-    <main>
-      <h1 class="heading" center>My JavaScript Roadmap</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="JS.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <title>JavaScript</title>
+</head>
 
-      <div class="list">
-            <details>
-              <summary><span class="var">Variables</span> <i class="fa-solid fa-circle-check"></i><a href="https://shorturl.at/akFHJ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></summary>
-              <div class="subTopics variables">
-              <p><i class="fa-solid fa-circle-check"></i> var <span class="outdated">(OutDated)</span></p>
-              <p><i class="fa-solid fa-circle-check"></i> let</p>
-              <p><i class="fa-solid fa-circle-check"></i> Const</p>
-              <p><i class="fa-solid fa-circle-check"></i> Variable Scoping</p>
-              </div>
-            </details>
+<body>
+  <main>
+    <h1 class="heading" center>JavaScript Roadmap</h1>
 
-            <details>
-              <summary><span class="dt"> Data Types</span> <i class="fa-solid fa-circle-check"></i><a href="https://shorturl.at/pOQX8" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></summary>
-              <details class="dt-p"> 
-                <summary class="primitives">
-                  <span>Primitives</span>
-                  <i class="fa-solid fa-circle-check"></i>
-                </summary>
-                <p><i class="fa-solid fa-circle-check"></i> String</p>
-                <p><i class="fa-solid fa-circle-check"></i> Number</p>
-                <p><i class="fa-solid fa-circle-check"></i> Boolean</p>
-                <p><i class="fa-solid fa-circle-check"></i> Bigint</p>
-                <p><i class="fa-solid fa-circle-check"></i> Null</p>
-                <p><i class="fa-solid fa-circle-check"></i> Symbol</p>
-                <p><i class="fa-solid fa-circle-check"></i> Undefined</p>
-              </details>
+    <div class="list">
+      <details>
+        <summary><span class="intro">Introduction to JavaScript</span> <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a></summary>
+        <div class="subTopics">
+          <p>What is JavaScript</p>
+          <p>History of JavaScript</p>
+          <p>JavaScript Versions</p>
+          <p>How to run JavaScript?</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="var">All about Variables</span> <a href="https://shorturl.at/akFHJ" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a></summary>
+        <div class="subTopics">
+          <details class="dec-var">
+            <summary class="dv"><span>Declaring Variables</span></summary>
+            <p> var</p>
+            <p> let</p>
+            <p> Const</p>
+          </details>
+          <p> Hoisting</p>
+        </div>
+      </details>
 
-              <details class="dt-cdt">
-                <summary class="cdt">
-                  <span>Complex Data Type</span>
-                  <i class="fa-solid fa-circle-check"></i>
-                </summary>
-                <p><i class="fa-solid fa-circle-check"></i> Object</p>
-                <p><i class="fa-solid fa-circle-check"></i> Array</p>
-                <p><i class="fa-solid fa-circle-check"></i> Functions</p>
-              </details>
-            </details>
-      </div>
-    </main>
+      <details>
+        <summary><span class="dt"> Data Types</span> <a href="https://shorturl.at/pOQX8" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a></summary>
+        <details class="dt-p">
+          <summary class="primitives">
+            <span>Primitives</span>
 
-    <script src="app.js"></script>
-  </body>
+          </summary>
+          <p>String</p>
+          <p>Number</p>
+          <p>Boolean</p>
+          <p>Bigint</p>
+          <p>Null</p>
+          <p>Symbol</p>
+          <p>Undefined</p>
+        </details>
+
+        <details class="dt-cdt">
+          <summary class="cdt">
+            <span>Complex Data Type</span>
+
+          </summary>
+          <p> Object</p>
+          <p> Array</p>
+          <p> Functions</p>
+        </details>
+      </details>
+    </div>
+  </main>
+</body>
+
 </html>
